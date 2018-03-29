@@ -1,5 +1,4 @@
 html {
-  width: 100%;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -17,6 +16,10 @@ header {
 
 .list {
   background-color: #fff;
+}
+
+li {
+  list-style-type: none;
 }
 
 table {
