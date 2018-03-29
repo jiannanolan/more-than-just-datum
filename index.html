@@ -12,59 +12,56 @@
 </head>
 <body>
 
-  <div class="grid">
 
-    <div class="unit xs-1">
-      <header>
-        <div class="unit-xs-hidden">
-          <h1>Playground Finder</h1>
-        </div>
-        <div class="xs-1 m-1-4 gutter-1-2 pad-t-1-2">
-          <img class="logo" src="images/logo.svg" alt>
-        </div>
-        <div class="unit xs-1 m-1-2 gutter-1-2 pad-b">
-          <form method="POST" action="https://formspree.io/nola0129@algonquinlive.com">
-            <div>
-              <label for="search"></label>
-              <input type="search" id="search" name="search" required>
-            </div>
-          </form>
-        </div>
-      </header>
+  <header class="grid">
+    <div class="unit xs-1 m-1-3 l-1-4">
+      <h1><img class="logo" src="images/logo.svg" alt="Playground Finder"></h1>
     </div>
+    <div class="unit xs-1 m-2-3 l-1-4">
+      <form method="POST" action="https://formspree.io/nola0129@algonquinlive.com">
+        <div>
+          <label for="search">Put icon here</label>
+          <input type="search" id="search" name="search" required>
+        </div>
+      </form>
+    </div>
+  </header>
 
-    <div class="unit xs-1 m-1-3 options">
-      <h2 class="bold mega pad-t-1-2 push-1-4">Nearest playgrounds</h2>
-      <div class="list island-1-4 push-1-2">
+  <main class="grid">
+
+    <div class="unit xs-1 m-1-3 l-1-4 options">
+      <h2 class="bold giga pad-t-1-2 push-1-4">Nearest playgrounds</h2>
+
+      <div class="list island-1-2 push-1-2">
         <ol class="push-0">
-          <li>373</li>
-          <li>Distance</li>
-          <li>0.75 km</li>
+          <li class="list-group list-group-inline s-1-3 l-1">373</li>
+          <li class="list-group list-group-inline s-1-3 l-1">Distance</li>
+          <li class="list-group s-1-3 l-1">0.75 km</li>
         </ol>
       </div>
-      <div class="list island-1-4 push-1-2">
+      <div class="list island-1-2 push-1-2">
         <ol class="push-0">
-          <li>1700</li>
-          <li>Distance</li>
-          <li>2.58 km</li>
+          <li class="list-group list-group-inline s-1-3 l-1">1700</li>
+          <li class="list-group list-group-inline s-1-3 l-1">Distance</li>
+          <li class="list-group s-1-3 l-1">2.58 km</li>
         </ol>
       </div>
-      <div class="list island-1-4 push-1-2">
+      <div class="list island-1-2 push-1-2">
         <ol class="push-0">
-          <li>960</li>
-          <li>Distance</li>
-          <li>3.03 km</li>
+          <li class="list-group list-group-inline s-1-3 l-1">960</li>
+          <li class="list-group list-group-inline s-1-3 l-1">Distance</li>
+          <li class="list-group s-1-3 l-1">3.03 km</li>
         </ol>
       </div>
     </div>
 
-    <div class="unit m-1-2">
-      <div class="table-wrapper scrollable">
-        <table>
-          <caption class="push-1-4">Playgrounds in the city</caption>
+
+      <div class="table-wrapper scrollable unit m-2-3 l-3-4">
+        <table class="milli island-1-2">
+          <caption class="push-1-4 mega">Playgrounds in the city</caption>
 
           <thead>
-            <tr>
+            <tr class="island-0">
               <th class="id" scope="col">Park ID</th>
               <th class="type" scope="col">Park type</th>
               <th class="group" scope="col">Age group</th>
@@ -353,8 +350,9 @@
             </tr>
           </tbody>
         </table>
-      </div>
+
     </div>
-  </div>
+  </main>
+
 </body>
 </html>
