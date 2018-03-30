@@ -6,6 +6,17 @@ html {
   max-width: 200px;
 }
 
+label {
+  position: relative;
+}
+
+.magnify {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+}
+
 header {
   background-color: #ddd;
 }
@@ -26,10 +37,18 @@ table {
   min-width: 45em;
 }
 
-@media only screen and (min-width: 72em) {
+@media only screen and (min-width: 60em) {
 
   .table-wrapper {
     overflow: visible;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  th {
+    height: 3.2em;
   }
 
 }
